@@ -8,14 +8,12 @@ $(document).ready(function(){
     var unanswered = 0;
 
 // Questions and Answer Arrays
-    var question = ["What is Lord Voldemort's real name?",
-    "Who was Dumbledore's immediate predecessor as Headmaster or Headmistress at Hogwarts?", "Whose mother was Rowena Ravenclaw?", "What was Voldemort's mother's maiden name?", "How many points is the Golden Snitch worth?",
-    "What is the only antidote to Basilisk's venom?", "What is the symbol for Gryffindor house?", "Who destroyed the last remaining Horcrux?"];
-    var answer = ["Tom Marvolo Riddle", "Armando Dippet", "The Grey Lady", "Gaunt", "150", "Phoenix Tears", "A Lion", "Neville Longbottom", "A Lion", "Neville Longbottom"];
-    var firstChoice = ["Tom Marvolo Riddle", "Phineas Nigellus Black", "Moaning Myrtle", "Riddle", "50", "Phoenix Tears", "A Badger", "Ginny Weasley"];
-    var secondChoice = ["Gellert Grindelwald", "Dexter Fortescue", "Lily Potter", "Clearwater", "500", "Dragon's Blood", "An Eagle", "Neville Longbottom"];
-    var thirdChoice = ["Salazar Slytherin", "Armando Dippet", "The Grey Lady", "Peverell", "100", "Mandrake Draught", "A Lion", "Severus Snape"];
-    var fourthChoice = ["Morfin Gaunt", "Dilys Derwent", "The Fat Lady", "Gaunt", "150", "A Bezoard", "A Snake", "Viktor Krum"];
+    var question = ["How many yards are on a football feild?", "How many players are allowed on the feild during play?", "How many points are awarded for a feild goal?", "How many teams are in the NFL?", "How many Super Bowls has Tom Brady won?"];
+    var answer = ["100","11","3","32","5"];
+    var firstChoice = ["100","12","1","35","10"];
+    var secondChoice = ["75","11","2","40","5"];
+    var thirdChoice = ["60","19","3","32","6"];
+    var fourthChoice = ["55","13","4","29","7"];
 
 // Show & Hide Functions
     function showHolders() {
@@ -179,21 +177,11 @@ $(document).ready(function(){
             $("#image-holder").show();
             $("#image-holder").html('<img src="assets/images/snitch.jpg">');
         }
-        else if(count === 5) {
-            $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/phoenix.jpg">');
-        }
-        else if(count === 6) {
-            $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/lion.jpg">');
-        }
-        else if(count === 7) {
-            $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/neville_longbottom.jpg">');
-        }
+       
+       
     }
 
- // Show Results Function   
+   
     function showResults() {
         $("#correct-holder").show();
         $("#correct-holder").html("Correct: " + correct);
@@ -205,37 +193,25 @@ $(document).ready(function(){
         $("#restart-holder").html("Click Start above to play again!");
     }
 
-// Reset Results Function 
+ 
     function resetResults() {
         correct = 0;
         incorrect = 0;
         unanswered = 0;
     }
 
-// Start Game Function
+
     function startGame() {
         $(".start").hide();
         startTime();
         displayQuestion();
     }
 
-// Start Game On Click
+
   $(".start").on("click", function() {
     startGame();
   });
 });
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
 
 
 

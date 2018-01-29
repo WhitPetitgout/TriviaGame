@@ -159,23 +159,23 @@ $(document).ready(function(){
     function displayImage() {
         if(count === 0) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/tom_marvolo_riddle.jpg">');
+            $("#image-holder").html('<img src="assets/images/1629-empty-american-football-feild.jpg">');
         }
         else if(count === 1) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/armando_dippet.jpg">');
+            $("#image-holder").html('<img src="assets/images/pexels-photo-260606.jpeg">');
         }
         else if(count === 2) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/helena_ravenclaw.png">');
+            $("#image-holder").html('<img src="assets/images/1551-closeup-of-american-football-on-tee-on-feild.jpg">');
         }
         else if(count === 3) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/merope_gaunt.png">');
+            $("#image-holder").html('<img src="assets/images/american-football-player-wallpapers-free-is-Cool-Wallpapers.jpg">');
         }
         else if(count === 4) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/snitch.jpg">');
+            $("#image-holder").html('<img src="assets/images/Tom Brady.jpg">');
         }
        
        

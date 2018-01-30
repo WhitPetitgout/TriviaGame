@@ -1,15 +1,16 @@
 h1, .jumbotron {
 	text-align: center;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC';
 	color: #fff;
 }
 
 .jumbotron {
-	background-image: url("../images/header-img.jpg");
+	background-image: url("../images/football-background.jpg");
 }
 
 body {
-	font-family: font-family: 'Josefin Sans', sans-serif;
+  background-image: url("../images/newBackground.jpg");
+	font-family:'Josefin Sans', sans-serif;
 	text-align: center;
 }
 

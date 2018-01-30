@@ -7,15 +7,15 @@ $(document).ready(function(){
     var incorrect = 0;
     var unanswered = 0;
 
-// Questions and Answer Arrays
-    var question = ["How many yards are on a football feild?", "How many players are allowed on the feild during play?", "How many points are awarded for a feild goal?", "How many teams are in the NFL?", "How many Super Bowls has Tom Brady won?"];
+
+    var question = ["How many yards are on a football field?", "How many players are allowed on the field during play?", "How many points are awarded for a field goal?", "How many teams are in the NFL?", "How many Super Bowls has Tom Brady won?"];
     var answer = ["100","11","3","32","5"];
     var firstChoice = ["100","12","1","35","10"];
     var secondChoice = ["75","11","2","40","5"];
     var thirdChoice = ["60","19","3","32","6"];
     var fourthChoice = ["55","13","4","29","7"];
 
-// Show & Hide Functions
+
     function showHolders() {
         $("#question-holder").show();
         $("#choice-holder-1").show();
@@ -48,7 +48,7 @@ $(document).ready(function(){
         $("#choice-holder-3").html(thirdChoice[count]);
         $("#choice-holder-4").html(fourthChoice[count]);
     
-    // Hover CSS
+    
         $("#choice-holder-1").hover(function() {
             $(this).css("color", "gray");
         },
@@ -79,7 +79,7 @@ $(document).ready(function(){
     $("#choice-holder-3").on("click", checkAnswer)
     $("#choice-holder-4").on("click", checkAnswer)
 
-// Check Answer Function
+
     function checkAnswer() {
 
         hideHolders();
@@ -106,7 +106,7 @@ $(document).ready(function(){
         checkGameEnd();  
     }
 
-// Chekc End Game Function
+
     function checkGameEnd() {
         if(count === question.length) {
             $("#time-holder").hide();
@@ -155,11 +155,11 @@ $(document).ready(function(){
 
     resetTime();
 
-// Display Images With Answer
+
     function displayImage() {
         if(count === 0) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/1629-empty-american-football-feild.jpg">');
+            $("#image-holder").html('<img src="assets/images/1629-empty-american-football-field.jpg">');
         }
         else if(count === 1) {
             $("#image-holder").show();
@@ -167,7 +167,7 @@ $(document).ready(function(){
         }
         else if(count === 2) {
             $("#image-holder").show();
-            $("#image-holder").html('<img src="assets/images/1551-closeup-of-american-football-on-tee-on-feild.jpg">');
+            $("#image-holder").html('<img src="assets/images/1551-closeup-of-american-football-on-tee-on-field.jpg">');
         }
         else if(count === 3) {
             $("#image-holder").show();
